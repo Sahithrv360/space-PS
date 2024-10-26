@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Space Enthusiasts Platform</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Space Enthusiasts Platform</h1>
+        <nav>
+            <a href="#register" id="registerLink">Register</a>
+            <a href="#login" id="loginLink">Login</a>
+            <a href="#forum">Discussion Forum</a>
+            <a href="#library">Library</a>
+            <a href="#events">Events Calendar</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="register" class="hidden">
+            <h2>Register</h2>
+            <form id="registerForm">
+                <input type="text" placeholder="Username" required>
+                <input type="password" placeholder="Password" required>
+                <button type="submit">Register</button>
+            </form>
+        </section>
+
+        <section id="login" class="hidden">
+            <h2>Login</h2>
+            <form id="loginForm">
+                <input type="text" placeholder="Username" required>
+                <input type="password" placeholder="Password" required>
+                <button type="submit">Login</button>
+            </form>
+        </section>
+
+        <section id="forum">
+            <h2>Discussion Forum</h2>
+            <div id="posts"></div>
+            <form id="postForm">
+                <textarea placeholder="Share your insights..." required></textarea>
+                <button type="submit">Post</button>
+            </form>
+        </section>
+
+        <section id="library">
+            <h2>Library</h2>
+            <div id="articles"></div>
+        </section>
+
+        <section id="events">
+            <h2>Events Calendar</h2>
+            <div id="eventList"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Space Enthusiasts Platform</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
